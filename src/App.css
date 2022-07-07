@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.container {
+  margin-left:80px;
+  margin-right: 60px;
+}
+h3{
+  font-size: xxx-large;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-parent {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.flex-child {
+  box-sizing: border-box;
+  transition: all 0.5s ease-out;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-child:nth-of-type(1n+1) {
+  background: #e83e8c 
+}
+.flex-child:nth-of-type(2n+1) {
+  background:#a376f8;
+}
+.flex-child:nth-of-type(3n+1) {
+  background:#ff8f85;
+}
+.flex-child:nth-of-type(4n+1) {
+  background:#d6b03e;
+}
+.flex-child:nth-of-type(5n+5) {
+  background:#3DC47E; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  min-height: 300px;
+  min-width: 200px;
+  border-radius: 3px;
+  position: relative;
+
+}
+
+.flex-child:hover,
+.flex-child:focus {
+  background-color: #fff;
+  color: #333;
+}
+
+.upper-case {
+  text-transform:uppercase;
+}
+
+.types, .weight, .ability {
+  padding: 10px;
+  border-radius: 6px;
+  margin: 5px;
+  border: 1px solid gray;
+  margin-top: 5px;
+}
+
+.level {
+  margin-top: 35px;
+}
+
+.profile {
+  display: block;
+  margin-left: 35%;
 }
